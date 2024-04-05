@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="B:\github\Jarur-Sikhenge\test 1.html"
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div id="sidebar" class="w-1/4 bg-gray-800">
+            <div class="p-4">
+                <h1 class="text-3xl font-bold mb-6">Menus</h1>
+                <ul>
+                    <li><a href="#" onclick="showSection('addDepartment')" class="block py-2 px-4 hover:bg-gray-700">Add Department</a></li>
+                    <li><a href="#" onclick="showSection('departmentList')" class="block py-2 px-4 hover:bg-gray-700">Department List</a></li>
+                    <li><a href="#" onclick="showSection('addStaff')" class="block py-2 px-4 hover:bg-gray-700">Add Staff</a></li>
+                    <li><a href="#" onclick="showSection('manageStaff')" class="block py-2 px-4 hover:bg-gray-700">Manage Staff</a></li>
+                    <li><a href="#" onclick="showSection('departmentInventory')" class="block py-2 px-4 hover:bg-gray-700">Departmental Inventory</a></li>
+                    <div id="sidebar" class="w-1/4 bg-gray-800">
+                        <div class="p-4">
+                            <h1 class="text-3xl font-bold mb-6">Menus</h1>
+                            <ul>
+                                <li><a href="GurukulERP.html#dashboard" class="block py-2 px-4 hover:bg-gray-700">Dashboard</a></li>
+                                <li><a href="GurukulERP.html#admissions" class="block py-2 px-4 hover:bg-gray-700">Admissions</a></li>
+                                <li><a href="GurukulERP.html#students" class="block py-2 px-4 hover:bg-gray-700">Students</a></li>
+                                <!-- Add more links as needed -->
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!-- End of Sidebar -->
+
+        <!-- Main Content -->
+        <div class="flex-1 p-10 relative">
+            <!-- Toggle Sidebar Button -->
+            <button id="toggleSidebar" class="absolute top-5 left-5 bg-gray-800 text-white px-4 py-2 rounded-full focus:outline-none z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 10a2 2 0 100-4 2 2 0 000 4zM9 10a2 2 0 100-4 2 2 0 000 4zM17 10a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <!-- End of Toggle Sidebar Button -->
+
+            <!-- Add Department Section -->
+            <div id="addDepartment" class="max-w-md mx-auto bg-gray-800 rounded-lg overflow-hidden md:max-w-xl">
+                <!-- Form -->
+                <div class="md:flex">
+                    <div class="w-full px-4 py-8">
+                        <h2 class="text-xl font-semibold mb-4">Add Department</h2>
+                        <form>
+                            <div class="mb-4">
+                                <label for="category" class="block text-sm font-medium text-gray-300">Category</label>
+                                <input type="text" id="category" name="category" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-700 rounded-md bg-gray-900 text-gray-100">
+                            </div>
+                            <div class="mb-4">
+                                <label for="department_name" class="block text-sm font-medium text-gray-300">Department Name</label>
+                                <input type="text" id="department_name" name="department_name" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-700 rounded-md bg-gray-900 text-gray-100">
+                            </div>
+                            <div class="mt-4">
+                                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End of Form -->
+            </div>
+            <!-- End of Add Department Section -->
+
+            <!-- Department List Page -->
+            <div id="departmentList" class="hidden p-10">
+                <h2 class="text-2xl font-semibold mb-4">Department List</h2>
+                <!-- Table -->
+                <table class="min-w-full divide-y divide-gray-700">
+                    <!-- Table Content -->
+                </table>
+                <!-- End of Table -->
+            </div>
+            <!-- End of Department List Page -->
+
+            <!-- Add Staff Page -->
+            <div id="addStaff" class="hidden p-10">
+                <h2 class="text-2xl font-semibold mb-4">Add Staff</h2>
+                <!-- Form -->
+                <form>
+                    <!-- Form Content -->
+                </form>
+                <!-- End of Form -->
+            </div>
+            <!-- End of Add Staff Page -->
+
+            <!-- Manage Staff Page -->
+            <div id="manageStaff" class="hidden p-10">
+                <h2 class="text-2xl font-semibold mb-4">Manage Staff</h2>
+                <!-- Table -->
+                <table class="min-w-full divide-y divide-gray-700">
+                    <!-- Table Content -->
+                </table>
+                <!-- End of Table -->
+            </div>
+            <!-- End of Manage Staff Page -->
+
+            <!-- Departmental Inventory Page -->
+            <div id="departmentInventory" class="hidden p-10">
+                <h2 class="text-2xl font-semibold mb-4">Departmental Inventory</h2>
+                <!-- Table -->
+                <table class="min-w-full divide-y divide-gray-700">
+                    <!-- Table Content -->
+                </table>
+                <!-- End of Table -->
+            </div>
+            <!-- End of Departmental Inventory Page -->
+        </div>
+        <!-- End of Main Content -->
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.flex-1 > div').forEach(function(section) {
+                section.classList.add('hidden');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        // JavaScript to toggle sidebar visibility
+        const toggleButton = document.getElementById('toggleSidebar');
+        const sidebar = document.getElementById('sidebar');
+
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

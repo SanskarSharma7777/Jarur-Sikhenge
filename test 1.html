@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,52 +10,69 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
-<body class="font-sans bg-gray-900 text-white">
-    <!-- Sidebar -->
-    <div class="sidebar bg-gray-800 min-h-screen flex flex-col fixed top-0 left-0 w-full sm:w-64 overflow-x-hidden overflow-y-auto transition-all duration-300">
-
-        <div class="p-6">
-            <h1 class="text-3xl font-bold mb-8 text-center">Gurukul ERP</h1>
-            <nav class="space-y-4">
-                <a href="#dashboard" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Dashboard</a>
-                <a href="#admissions" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Admissions</a>
-                <a href="#students" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Students</a>
-                <a href="#fees" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Fees & Payments</a>
-                <a href="#timetable" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Time Table</a>
-                <a href="#quiz" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Quiz</a>
-                <a href="#results" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Results</a>
-                <a href="#departments" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Departments</a>
-                <a href="#notifications" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Notifications</a>
-                <a href="#settings" class="block px-6 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Settings</a>
-            </nav>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content ml-0 sm:ml-64 transition-all duration-300">
-        <!-- Dashboard Section -->
-        <section id="dashboard" class="section">
-            <header class="bg-gray-700 border-b border-gray-600 py-4 px-6 flex justify-between items-center">
-                <h1 class="text-3xl font-bold">Dashboard</h1>
-                <div class="flex items-center space-x-4">
-                    <input type="text" placeholder="Search" class="border border-gray-600 rounded px-4 py-2 focus:outline-none focus:border-indigo-500 transition-colors bg-gray-800">
-                    <div class="relative group">
-                        <button class="text-gray-400 group-hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                                <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM3 10a7 7 0 1114 0 7 7 0 01-14 0z" />
-                            </svg>
-                        </button>
-                        <div class="hidden bg-gray-800 text-base absolute rounded-lg shadow-md right-0 mt-10 w-36 p-2 group-hover:block">
-                            <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-600">Change User</a>
-                            <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-600">Sign Out</a>
-                        </div>
+<body class="bg-gray-900 text-white">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 lg:w-1/4 bg-gray-800">
+            <div class="p-4">
+                <h1 class="text-3xl font-bold mb-8 text-center lg:text-left">Gurukul ERP</h1>
+                <nav class="space-y-4">
+                    <a href="#dashboard" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Dashboard</a>
+                    <a href="#admissions" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Admissions</a>
+                    <a href="#students" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Students</a>
+                    <a href="#fees" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Fees & Payments</a>
+                    <a href="#timetable" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Time Table</a>
+                    <a href="#quiz" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Quiz</a>
+                    <a href="#results" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Results</a>
+                    <a href="#departments" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Departments</a>
+                    <a href="#notifications" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Notifications</a>
+                    <a href="#settings" class="block px-4 py-2 rounded-lg text-lg font-semibold transition-colors hover:bg-gray-700">Settings</a>
+                    <div class="flex items-center space-x-4">
+                      
+                        <a href="Menu.html" class="text-gray-400 hover:text-white">Return to Menu</a>
+                        
                     </div>
-                    <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" alt="User Avatar" class="w-10 h-10 rounded-full transition-transform transform hover:scale-110">
-                </div>
-            </header>
+                </nav>
+            </div>
+        </div>
+        <!-- End of Sidebar -->
+          <!-- Main Content -->
+          <div class="flex-1 p-10 relative">
+            <!-- Toggle Sidebar Button -->
+            <button id="toggleSidebar" class="absolute top-5 left-5 bg-gray-800 text-white px-4 py-2 rounded-full focus:outline-none z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 10a2 2 0 100-4 2 2 0 000 4zM9 10a2 2 0 100-4 2 2 0 000 4zM17 10a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <!-- End of Toggle Sidebar Button -->
 
-            <main class="p-6 space-y-6">
+
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="section mt-4">
+                <!-- Header -->
+                <header class="bg-gray-700 border-b border-gray-600 py-4 px-6 flex justify-between items-center">
+                    <div>
+                        <h1 class="text-3xl font-bold">Dashboard</h1>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <input type="text" placeholder="Search" class="border border-gray-600 rounded px-4 py-2 focus:outline-none focus:border-indigo-500 transition-colors bg-gray-800">
+                        <div class="relative group">
+                            <button class="text-gray-400 group-hover:text-indigo-500 focus:outline-none focus:text-indigo-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                    <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM3 10a7 7 0 1114 0 7 7 0 01-14 0z" />
+                                </svg>
+                            </button>
+                            <div class="hidden bg-gray-800 text-base absolute rounded-lg shadow-md right-0 mt-10 w-36 p-2 group-hover:block">
+                                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-600">Change User</a>
+                                <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-600">Sign Out</a>
+                            </div>
+                        </div>
+                        <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" alt="User Avatar" class="w-10 h-10 rounded-full transition-transform transform hover:scale-110">
+                    </div>
+                </header>
+
+                <main class="p-6 space-y-6">
                 <!-- Analysis Cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Total Students Card -->
@@ -78,9 +94,7 @@
                         <h2 class="text-lg font-semibold">Total Fees & Payments</h2>
                         <p class="text-gray-400">Amount of fees received</p>
                         <div class="text-3xl font-bold text-indigo-400">₹150,000</div>
-                        <p class
-
-="text-gray-400">Amount of fees due</p>
+                        <p class="text-gray-400">Amount of fees due</p>
                         <div class="text-3xl font-bold text-indigo-400">₹50,000</div>
                         <canvas id="feesDoughnutChart" class="w-24 h-12"></canvas>
                     </div>
@@ -97,6 +111,7 @@
                         <div class="text-3xl font-bold text-indigo-400">6</div>
                         <canvas id="DepartmentsDoughnutChart" class="w-24 h-12"></canvas>
                     </div>
+
                     <!-- Total Quiz Card -->
                     <div class="card bg-gray-800 rounded-lg shadow-md p-6 transition-transform hover:scale-105 flex flex-col justify-center items-center space-y-2">
                         <h2 class="text-lg font-semibold">Quiz</h2>
@@ -112,11 +127,11 @@
                     </div>
                     <!-- Total Notifications Card -->
                     <div class="card bg-gray-800 rounded-lg shadow-md p-6 transition-transform hover:scale-105 flex flex-col justify-center items-center space-y-2">
-                        <h2 class="text-lg font-semibold"> Notifications</h2>
+                        <h2 class="text-lg font-semibold">Notifications</h2>
                         <div class="text-3xl font-bold text-indigo-400">Total = 6</div>
                         <div class="text-3xl font-bold text-indigo-400">Unread = 2</div>
                         <div class="button bg-indigo-700 hover:bg-indigo-800 text-white rounded-full py-2 px-6 text-center cursor-pointer transition-colors">
-                            View  Notifications
+                            View Notifications
                         </div>
                         <div class="button bg-indigo-700 hover:bg-indigo-800 text-white rounded-full py-2 px-6 text-center cursor-pointer transition-colors">
                             Mark As All Read
@@ -166,7 +181,6 @@
             </main>
         </section>
     </div>
-
     <script>
         // JavaScript code for charts
         // Enrollment Bar Chart
@@ -210,9 +224,10 @@
                 }]
             },
             options: {
-                scales
-
-: {
+                scales: {
+                    x: {
+                        stacked: true
+                    },
                     y: {
                         beginAtZero: true
                     }
@@ -227,64 +242,52 @@
             data: {
                 labels: ['Received', 'Due'],
                 datasets: [{
-                    label: 'Fees',
-                    data: [150000, 50000], // Assuming 150000 received and 50000 due
-                    backgroundColor: [
-                        'rgba(54, 162, 235, 0.5)',
-                        'rgba(255, 99, 132, 0.5)'
-                    ],
-                    borderColor: [
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 99, 132, 1)'
-                    ],
+                    label: 'Total Fees & Payments',
+                    data: [150000, 50000], // Assuming ₹150,000 received and ₹50,000 due
+                    backgroundColor: ['rgba(40, 167, 69, 0.5)', 'rgba(220, 53, 69, 0.5)'],
+                    borderColor: ['rgba(40, 167, 69, 1)', 'rgba(220, 53, 69, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {}
+        });
+
+        // Time Table Line Chart
+        var timeTableCtx = document.getElementById('timeTableLineChart').getContext('2d');
+        var timeTableLineChart = new Chart(timeTableCtx, {
+            type: 'line',
+            data: {
+                labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                datasets: [{
+                    label: 'Classes Scheduled',
+                    data: [6, 6, 6, 6, 6], // Assuming 6 classes scheduled every day
+                    backgroundColor: 'rgba(75, 192, 192, 0.5)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 1
                 }]
             },
             options: {
-                plugins: {
-                    legend: {
-                        position: 'bottom'
+                scales: {
+                    y: {
+                        beginAtZero: true
                     }
                 }
             }
         });
-
-        // Time Table Line Chart
-    var timeTableCtx = document.getElementById('timeTableLineChart').getContext('2d');
-    var timeTableLineChart = new Chart(timeTableCtx, {
-        type: 'line',
-        data: {
-            labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-            datasets: [{
-                label: 'Number of Classes Scheduled',
-                data: [5, 6, 5, 4, 5, 5], // Sample data for number of classes scheduled for each day
-                backgroundColor: 'rgba(255, 193, 7, 0.2)',
-                borderColor: 'rgba(255, 193, 7, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
 
         // Departments Doughnut Chart
         var departmentsCtx = document.getElementById('DepartmentsDoughnutChart').getContext('2d');
         var departmentsDoughnutChart = new Chart(departmentsCtx, {
             type: 'doughnut',
             data: {
-                labels: ['CS', 'DS', 'EX', 'EE', 'ME', 'CE'],
+                labels: ['Engineering', 'Medical', 'Arts', 'Commerce', 'Science', 'Law'],
                 datasets: [{
-                    label: 'Departments',
-                    data: [100, 80, 70, 120, 90, 60], // Assuming some data for departments
+                    label: 'Total Departments',
+                    data: [10, 8, 6, 5, 4, 2], // Assuming total departments for each category
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.5)',
                         'rgba(54, 162, 235, 0.5)',
-                        'rgba(255, 206, 86, 0.5)',
+                        'rgba(255, 205, 86, 0.5)',
                         'rgba(75, 192, 192, 0.5)',
                         'rgba(153, 102, 255, 0.5)',
                         'rgba(255, 159, 64, 0.5)'
@@ -292,7 +295,7 @@
                     borderColor: [
                         'rgba(255, 99, 132, 1)',
                         'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 205, 86, 1)',
                         'rgba(75, 192, 192, 1)',
                         'rgba(153, 102, 255, 1)',
                         'rgba(255, 159, 64, 1)'
@@ -300,13 +303,7 @@
                     borderWidth: 1
                 }]
             },
-            options: {
-                plugins: {
-                    legend: {
-                        position: 'bottom'
-                    }
-                }
-            }
+            options: {}
         });
 
         // Quiz Doughnut Chart
@@ -314,28 +311,30 @@
         var quizDoughnutChart = new Chart(quizCtx, {
             type: 'doughnut',
             data: {
-                labels: ['ATTEMPTED', 'NOT ATTEMPTED'],
+                labels: ['Maths', 'Science', 'History', 'Geography', 'Literature', 'Music'],
                 datasets: [{
-                    label: 'Quiz Results',
-                    data: [5, 1], // Assuming 80% pass and 20% fail
+                    label: 'Quiz',
+                    data: [20, 15, 10, 8, 5, 2], // Assuming total quizzes for each subject
                     backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(255, 205, 86, 0.5)',
                         'rgba(75, 192, 192, 0.5)',
-                        'rgba(255, 99, 132, 0.5)'
+                        'rgba(153, 102, 255, 0.5)',
+                        'rgba(255, 159, 64, 0.5)'
                     ],
                     borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 205, 86, 1)',
                         'rgba(75, 192, 192, 1)',
-                        'rgba(255, 99, 132, 1)'
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
                     ],
                     borderWidth: 1
                 }]
             },
-            options: {
-                plugins: {
-                    legend: {
-                        position: 'bottom'
-                    }
-                }
-            }
+            options: {}
         });
 
         // Results Doughnut Chart
@@ -345,26 +344,24 @@
             data: {
                 labels: ['Pass', 'Fail'],
                 datasets: [{
-                    label: 'Result Analysis',
+                    label: 'Results',
                     data: [80, 20], // Assuming 80% pass and 20% fail
-                    backgroundColor: [
-                        'rgba(75, 192, 192, 0.5)',
-                        'rgba(255, 99, 132, 0.5)'
-                    ],
-                    borderColor: [
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(255, 99, 132, 1)'
-                    ],
+                    backgroundColor: ['rgba(40, 167, 69, 0.5)', 'rgba(220, 53, 69, 0.5)'],
+                    borderColor: ['rgba(40, 167, 69, 1)', 'rgba(220, 53, 69, 1)'],
                     borderWidth: 1
                 }]
             },
-            options: {
-                plugins: {
-                    legend: {
-                        position: 'bottom'
-                    }
-                }
-            }
+            options: {}
+        });
+    </script>
+    
+    <script>
+        // JavaScript to toggle sidebar visibility
+        const toggleButton = document.getElementById('toggleSidebar');
+        const sidebar = document.querySelector('.bg-gray-800');
+
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
         });
     </script>
 </body>
